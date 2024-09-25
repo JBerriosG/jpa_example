@@ -4,9 +4,9 @@
 
 ## Este proyecto fue pensado con la idea de poder ayudar a aquellos que estan recien empezando en la implementacion de JPA en sus proyectos. Solo deben descargar el zip, descomprimir la carpeta, abrirla con IDE de prefenrencia.
 ## Luego de abrirlo solo deben ejecutarlo para probar como funciona usando postman. Aqui debajo les dejare los endpoint que deben usar para obtener resultados de la API y ejemplos de como se verian al consultar desde postman.
-````markdown
+
 - saveMonster = POST: http://localhost:8080/monster
-````
+
 ````JSON
 {
     "name": "Vampiro",
@@ -16,9 +16,7 @@
     "id": 33
 }
 ````
-````markdown
 - getAllMonsters = GET: http://localhost:8080/monsters
-````
 ````JSON
 [
     {
@@ -58,9 +56,7 @@
     }
 ]
 ````
-````markdown
 - getAllMonstersByType = GET: http://localhost:8080/api/monsters/type/Humano Maldecido
-````
 ````JSON
 [
     {
@@ -86,9 +82,7 @@
     }
 ]
 ````
-````markdown
 - getAllMonstersByOrigin = GET: http://localhost:8080/api/monsters/origin/Multiple
-````
 ````JSON
 [
     {
