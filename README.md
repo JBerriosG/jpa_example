@@ -2,10 +2,10 @@
 
 # Bienvenidos Geeks y Freaks
 
-## Este proyecto fue pensado con la idea de poder ayudar a aquellos que estan recien empezando en la implementacion de JPA en sus proyectos. Solo deben descargar el zip, descomprimir la carpeta, abrirla con IDE de prefenrencia.
-## Luego de abrirlo solo deben ejecutarlo para probar como funciona usando postman. Aqui debajo les dejare los endpoint que deben usar para obtener resultados de la API y ejemplos de como se verian al consultar desde postman.
+Este proyecto fue pensado con la idea de poder ayudar a aquellos que estan recien empezando en la implementacion de JPA en sus proyectos. Solo deben descargar el zip, descomprimir la carpeta, abrirla con IDE de prefenrencia.
+<br>Luego de abrirlo solo deben ejecutarlo para probar como funciona usando postman. Aqui debajo les dejare los endpoint que deben usar para obtener resultados de la API y ejemplos de como se verian al consultar desde postman.
 
-- saveMonster = POST: http://localhost:8080/monster
+- saveMonster = `POST`: http://localhost:8080/monster
 
 ````JSON
 {
@@ -16,7 +16,7 @@
     "id": 33
 }
 ````
-- getAllMonsters = GET: http://localhost:8080/monsters
+- getAllMonsters = `GET`: http://localhost:8080/monsters
 ````JSON
 [
     {
@@ -56,7 +56,7 @@
     }
 ]
 ````
-- getAllMonstersByType = GET: http://localhost:8080/api/monsters/type/Humano Maldecido
+- getAllMonstersByType = `GET`: http://localhost:8080/api/monsters/type/Humano Maldecido
 ````JSON
 [
     {
@@ -82,7 +82,7 @@
     }
 ]
 ````
-- getAllMonstersByOrigin = GET: http://localhost:8080/api/monsters/origin/Multiple
+- getAllMonstersByOrigin = `GET`: http://localhost:8080/api/monsters/origin/Multiple
 ````JSON
 [
     {
