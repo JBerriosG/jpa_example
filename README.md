@@ -1,14 +1,110 @@
 ![SpringBoot](./src/main/resources/static/springBootAndSpringDataJpa.webp)
 
-# Bienvenidos Letrad@s
+# Bienvenidos Geeks y Freaks
 
 ## Este proyecto fue pensado con la idea de poder ayudar a aquellos que estan recien empezando en la implementacion de JPA en sus proyectos. Solo deben descargar el zip, descomprimir la carpeta, abrirla con IDE de prefenrencia.
 ## Luego de abrirlo solo deben ejecutarlo para probar como funciona usando postman. Aqui debajo les dejare los endpoint que deben usar en postman para obtener resultados de la API.
-
+## Aquí debajo tendran un ejemplo de como se veria el resultado de cada endpoint luego hacer uso de ellos en postman o quizas un front-end que puedan crear
+````markdown
+- saveMonster = POST: http://localhost:8080/monster
+````
+````JSON
+{
+    "name": "Vampiro",
+    "origin": "Rumania",
+    "type": "Humano Maldecido",
+    "weakness": "Luz solar.",
+    "id": 33
+}
+````
 ````markdown
 - getAllMonsters = GET: http://localhost:8080/monsters
-- saveMonster = POST: http://localhost:8080/monster
-- getAllMonstersByType = GET: http://localhost:8080/monsters/type/{type}
-- getAllMonstersByOrigin = GET: http://localhost:8080/monsters/origin/{origin}
 ````
-
+````JSON
+[
+    {
+        "name": "La llorona",
+        "origin": "Multiple",
+        "type": "Espectro",
+        "weakness": "Los espiritus de sus hijos muertos, hierro y sal.",
+        "id": 1
+    },
+    {
+        "name": "El Wendigo",
+        "origin": "EE.UU",
+        "type": "Humano Maldecido",
+        "weakness": "Fuego",
+        "id": 2
+    },
+    {
+        "name": "Oh nanoko no ana",
+        "origin": "Corea",
+        "type": "Espectro",
+        "weakness": "Hierro y sal.",
+        "id": 3
+    },
+    {
+        "name": "Hombre Lobo",
+        "origin": "Multiple",
+        "type": "Humano Maldecido",
+        "weakness": "Plata.",
+        "id": 4
+    },
+    {
+        "name": "Vampiro",
+        "origin": "Rumania",
+        "type": "Humano Maldecido",
+        "weakness": "Luz solar.",
+        "id": 33
+    }
+]
+````
+````markdown
+- getAllMonstersByType = GET: http://localhost:8080/api/monsters/type/Humano Maldecido
+````
+````JSON
+[
+    {
+        "name": "El Wendigo",
+        "origin": "EE.UU",
+        "type": "Humano Maldecido",
+        "weakness": "Fuego",
+        "id": 2
+    },
+    {
+        "name": "Hombre Lobo",
+        "origin": "Multiple",
+        "type": "Humano Maldecido",
+        "weakness": "Plata.",
+        "id": 4
+    },
+    {
+        "name": "Vampiro",
+        "origin": "Rumania",
+        "type": "Humano Maldecido",
+        "weakness": "Luz solar.",
+        "id": 33
+    }
+]
+````
+````markdown
+- getAllMonstersByOrigin = GET: http://localhost:8080/api/monsters/origin/Multiple
+````
+````JSON
+[
+    {
+        "name": "La llorona",
+        "origin": "Multiple",
+        "type": "Espectro",
+        "weakness": "Los espiritus de sus hijos muertos, hierro y sal.",
+        "id": 1
+    },
+    {
+        "name": "Hombre Lobo",
+        "origin": "Multiple",
+        "type": "Humano Maldecido",
+        "weakness": "Plata.",
+        "id": 4
+    }
+]
+````
