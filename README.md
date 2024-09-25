@@ -3,8 +3,7 @@
 # Bienvenidos Geeks y Freaks
 
 ## Este proyecto fue pensado con la idea de poder ayudar a aquellos que estan recien empezando en la implementacion de JPA en sus proyectos. Solo deben descargar el zip, descomprimir la carpeta, abrirla con IDE de prefenrencia.
-## Luego de abrirlo solo deben ejecutarlo para probar como funciona usando postman. Aqui debajo les dejare los endpoint que deben usar en postman para obtener resultados de la API.
-## Aquí debajo tendran un ejemplo de como se veria el resultado de cada endpoint luego hacer uso de ellos en postman o quizas un front-end que puedan crear
+## Luego de abrirlo solo deben ejecutarlo para probar como funciona usando postman. Aqui debajo les dejare los endpoint que deben usar para obtener resultados de la API y ejemplos de como se verian al consultar desde postman.
 ````markdown
 - saveMonster = POST: http://localhost:8080/monster
 ````
