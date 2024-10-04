@@ -20,8 +20,13 @@ public class MonsterController {
     }
 
     @PostMapping("/monster")
-    public MonsterEntity saveMonster(@RequestBody MonsterEntity monster){
-        return this.service.saveMonster(monster);
+    public MonsterEntity saveAndUpdateMonster(@RequestBody MonsterEntity monster){
+        return this.service.saveAndUpdateMonster(monster);
+    }
+
+    @DeleteMapping("/monster")
+    public String deleteMonster(@RequestBody MonsterEntity monster){
+        return this.service.deleteMonster(monster);
     }
 
     @GetMapping("/monsters/type/{type}")

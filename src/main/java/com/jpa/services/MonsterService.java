@@ -17,8 +17,13 @@ public class MonsterService {
         return this.repository.findAll();
     }
 
-    public MonsterEntity saveMonster(MonsterEntity monster){
+    public MonsterEntity saveAndUpdateMonster(MonsterEntity monster){
         return this.repository.save(monster);
+    }
+
+    public String deleteMonster(MonsterEntity monster){
+        this.repository.delete(monster);
+        return "Monster was deleted succeeded";
     }
 
     public List<MonsterEntity> getAllMonstersByType(String type){
